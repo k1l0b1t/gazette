@@ -73,7 +73,7 @@ if (substr(strtolower($subject), 0, 11) == "unsubscribe"){
     
   }
   fclose($newfile);
-  mail($subaddress,"Re:". $subject,"You are now unsubscribed from ".$listaddress.".","From: ".$listaddress."\r\nX-Mailer: Gazette/0.1\r\nPrecedence: list\r\nList-Subscribe: <mailto:".$listaddress."?subject=subscribe>\r\nList-Unsubscribe: <mailto:".$listaddress."?subject=unsubscribe>");
+  mail($from_address,"Re:". $subject,"You are now unsubscribed from ".$listaddress.".","From: ".$listaddress."\r\nX-Mailer: Gazette/0.1\r\nPrecedence: list\r\nList-Subscribe: <mailto:".$listaddress."?subject=subscribe>\r\nList-Unsubscribe: <mailto:".$listaddress."?subject=unsubscribe>");
   die(); // stop here
 }
 
