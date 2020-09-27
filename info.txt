@@ -1,0 +1,2 @@
+some info for your list could be placed here
+this is included in the welcome email after a user subscribes
